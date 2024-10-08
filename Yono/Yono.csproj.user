@@ -7,7 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="MainWindow.xaml">
+    <Compile Update="Pages\Personnel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlApp\AutoComplete.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlApp\FormInput.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\AddPersonnel.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Pages\Personnel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlApp\AutoComplete.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlApp\FormInput.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\AddPersonnel.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
