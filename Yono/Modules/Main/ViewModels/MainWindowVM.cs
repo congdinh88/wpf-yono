@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yono.ViewModels
+namespace Yono.Modules.Main.ViewModels
 {
     class MainWindowVM
     {

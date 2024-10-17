@@ -1,0 +1,80 @@
+/Yono
+│
+├── /App.xaml
+├── /App.xaml.cs
+├── /Assets                # Thư mục chứa tài nguyên như hình ảnh, biểu tượng
+│   ├── /Images
+│   └── /Icons
+│
+├── /Core                  # Chứa các thành phần cốt lõi, service, helpers, utils
+│   ├── /Services          # Chứa các service dùng chung
+│   │   ├── ApiService.cs
+│   │   ├── DatabaseService.cs
+│   │   └── NavigationService.cs
+│   ├── /Helpers           # Chứa các class hỗ trợ, extension methods
+│   │   └── StringHelper.cs
+│   ├── /Exceptions        # Chứa các loại ngoại lệ (exception) tùy chỉnh
+│   └── /Base              # Chứa các class cơ sở như ViewModelBase, ModelBase
+│       ├── ViewModelBase.cs
+│       └── ModelBase.cs
+│
+├── /Data                  # Chứa các lớp liên quan đến dữ liệu
+│   ├── /Repositories      # Chứa các repository cho việc truy vấn dữ liệu
+│   ├── /Entities          # Chứa các entity class đại diện cho dữ liệu trong CSDL
+│   └── /DataContext       # Lớp làm việc với cơ sở dữ liệu
+│       └── AppDbContext.cs
+│
+├── /Modules               # Chứa các module chính của ứng dụng
+│   ├── /Customer          # Module quản lý khách hàng
+│   │   ├── /Views         # Giao diện của module khách hàng
+│   │   │   ├── CustomerView.xaml
+│   │   │   └── CustomerView.xaml.cs
+│   │   ├── /ViewModels    # ViewModel của module khách hàng
+│   │   │   └── CustomerViewModel.cs
+│   │   ├── /Models        # Model của module khách hàng
+│   │   │   └── CustomerModel.cs
+│   │   └── /Services      # Dịch vụ riêng của module khách hàng
+│   │       └── CustomerService.cs
+│   │
+│   ├── /Product           # Module quản lý sản phẩm
+│   │   ├── /Views         # Giao diện của module sản phẩm
+│   │   │   ├── ProductView.xaml
+│   │   │   └── ProductView.xaml.cs
+│   │   ├── /ViewModels    # ViewModel của module sản phẩm
+│   │   │   └── ProductViewModel.cs
+│   │   ├── /Models        # Model của module sản phẩm
+│   │   │   └── ProductModel.cs
+│   │   └── /Services      # Dịch vụ riêng của module sản phẩm
+│   │       └── ProductService.cs
+│   │
+│   └── /Order             # Module quản lý đơn hàng
+│       ├── /Views         # Giao diện của module đơn hàng
+│       │   ├── OrderView.xaml
+│       │   └── OrderView.xaml.cs
+│       ├── /ViewModels    # ViewModel của module đơn hàng
+│       │   └── OrderViewModel.cs
+│       ├── /Models        # Model của module đơn hàng
+│       │   └── OrderModel.cs
+│       └── /Services      # Dịch vụ riêng của module đơn hàng
+│           └── OrderService.cs
+│
+├── /Resources             # Chứa tài nguyên chung như styles, templates
+│   ├── /Styles
+│   │   └── GeneralStyles.xaml
+│   ├── /Templates
+│   │   └── DataTemplates.xaml
+│   └── /Fonts
+│       └── CustomFont.ttf
+│
+├── /ViewModels            # ViewModels chung cho ứng dụng
+│   ├── MainViewModel.cs   # ViewModel chính của ứng dụng
+│   └── LoginViewModel.cs  # ViewModel cho chức năng đăng nhập
+│
+├── /Views                 # Views chung cho ứng dụng
+│   ├── MainWindow.xaml    # View chính của ứng dụng
+│   ├── MainWindow.xaml.cs
+│   └── LoginView.xaml     # View đăng nhập
+│
+└── /AppConfig             # Chứa cấu hình ứng dụng
+    ├── AppSettings.json
+    └── AppSettings.cs

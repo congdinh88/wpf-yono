@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Yono.Models
+namespace Yono.Modules.Personnel.Models
 {
     public class PersonnelModel
     {

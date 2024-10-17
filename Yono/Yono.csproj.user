@@ -10,13 +10,13 @@
     <Compile Update="Pages\Personnel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlApp\AutoComplete.xaml.cs">
+    <Compile Update="Resources\Templates\AutoComplete.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UserControlApp\FormInput.xaml.cs">
+    <Compile Update="Resources\Templates\FormInput.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\AddPersonnel.xaml.cs">
+    <Compile Update="Modules\Personnel\Views\AddPersonnel.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -24,16 +24,16 @@
     <Page Update="Pages\Personnel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UserControlApp\AutoComplete.xaml">
+    <Page Update="Resources\Templates\AutoComplete.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="UserControlApp\FormInput.xaml">
+    <Page Update="Resources\Templates\FormInput.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\AddPersonnel.xaml">
+    <Page Update="Modules\Personnel\Views\AddPersonnel.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\MainWindow.xaml">
+    <Page Update="Modules\Main\Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

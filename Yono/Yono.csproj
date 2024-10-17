@@ -6,11 +6,35 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>Static\Logo Y.ico</ApplicationIcon>
+    <ApplicationIcon>Assets\Icons\Logo Y.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Static\Logo Y.ico" />
+    <Content Include="Assets\Icons\Logo Y.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\Images\" />
+    <Folder Include="Core\Helpers\" />
+    <Folder Include="Core\Exceptions\" />
+    <Folder Include="Core\Base\" />
+    <Folder Include="Core\Services\" />
+    <Folder Include="Data\Entities\" />
+    <Folder Include="Data\Repositories\" />
+    <Folder Include="Data\DataContext\" />
+    <Folder Include="Modules\Main\Models\" />
+    <Folder Include="Modules\Personnel\ViewModels\" />
+    <Folder Include="Modules\PPE\Models\" />
+    <Folder Include="Modules\PPE\ViewModels\" />
+    <Folder Include="Modules\PPE\Views\" />
+    <Folder Include="Modules\Union\Models\" />
+    <Folder Include="Modules\Union\ViewModels\" />
+    <Folder Include="Modules\Union\Views\" />
+    <Folder Include="Modules\Works\Models\" />
+    <Folder Include="Modules\Works\ViewModels\" />
+    <Folder Include="Modules\Works\Views\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Resources\Styles\" />
   </ItemGroup>
 
 </Project>
