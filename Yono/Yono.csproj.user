@@ -36,5 +36,8 @@
     <Page Update="Modules\Main\Views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Resources\Templates\Templetes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>
