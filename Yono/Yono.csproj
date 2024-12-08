@@ -19,7 +19,6 @@
     <Folder Include="Core\Exceptions\" />
     <Folder Include="Core\Base\" />
     <Folder Include="Core\Services\" />
-    <Folder Include="Data\Entities\" />
     <Folder Include="Data\Repositories\" />
     <Folder Include="Modules\Main\Models\" />
     <Folder Include="Modules\Personnel\ViewModels\" />
