@@ -11,7 +11,7 @@ namespace Yono.Data.DataContext
 {
     public partial class YonoDbContext:DbContext
     {
-        public virtual DbSet<NhanVienTable> NhanVienTables { get; set; }
+        public virtual DbSet<NhanVienTab> NhanVienTables { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseSqlServer("Server=CONGDINH88\\SQLEXPRESS;Database=Yono;User Id=sa;Password=pas123456;TrustServerCertificate=True");

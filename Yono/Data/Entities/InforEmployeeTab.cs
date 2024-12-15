@@ -8,15 +8,15 @@ using System.Threading.Tasks;
 
 namespace Yono.Data.Entities
 {
-    [Table("NhanViens", Schema = "NHANSU")]
-    public class NhanVienTable
+    [Table(" InforEmployees", Schema = "Employees")]
+    public class InforEmployeeTab
     {
         [Key]
         [MaxLength(7)]
         public string Code { get; set; }
         [MaxLength(50)]
         public string Name { get; set; }
-        public DateOnly DateOfBirth { get; set; }
+        public DateOnly Birthday { get; set; }
         [MaxLength(50)]
         public string JobPosition { get; set; }
         [MaxLength(50)]
