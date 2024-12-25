@@ -8,14 +8,14 @@ using System.Threading.Tasks;
 
 namespace Yono.Data.Entities
 {
-    [Table("Teams",Schema ="Employees")]
+    [Table("Teams",Schema ="Employee")]
     public class Team
     {
-        [Key] public int TeamId { get; set; }
+        [Key] public string TeamId { get; set; }
         [Required] public string Name {  get; set; }
-        [ForeignKey("Department")] public int DepartmentId { get; set; }
+        [Required] [ForeignKey("Department")] public string DepartmentId { get; set; }
         public Department Department { get; set; }
 
-        public ICollection<Employee> Employees { get; set;
+        public ICollection<Employee> Employees { get; set; }
     }
 }

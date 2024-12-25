@@ -11,10 +11,10 @@ namespace Yono.Data.Entities
     [Table("EmployeeDetails", Schema ="Employee")]
     public class EmployeeDetail
     {
-        [Key] public int EmployeeDetailsId { get; set; }
+        [Key] public string EmployeeDetailsId { get; set; }
         public string Tell { get; set; }
         public string Address { get; set; }
-        [ForeignKey("Employee")] public int EmployeeId { get; set; }
+        [Required] [ForeignKey("Employee")] public string EmployeeId { get; set; }
         public Employee Employee { get; set; }
     }
 }

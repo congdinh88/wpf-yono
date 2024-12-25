@@ -11,8 +11,9 @@ namespace Yono.Data.Entities
     [Table("Departments", Schema ="Employee")]
     public class Department
     {
-        [Key] public int DepartmentId { get; set; }
+        [Key] public string DepartmentId { get; set; }
         [Required] public string Name {  get; set; }
         public ICollection<Team> Teams { get; set; }
+        
     }
 }

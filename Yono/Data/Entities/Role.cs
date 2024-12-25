@@ -11,8 +11,10 @@ namespace Yono.Data.Entities
     [Table("Roles", Schema ="Employee")]
     public class Role
     {
-        [Key] public int RoleId {  get; set; }
+        [Key] public string RoleId {  get; set; }
         [Required] public string Name { get; set; }
+        [Required] [ForeignKey("Department")] string DepartmentId {  get; set; }
         public ICollection<Employee> Employees { get; set; }
+       
     }
 }

@@ -11,14 +11,14 @@ namespace Yono.Data.Entities
     [Table("Employees", Schema ="Employee")]
     public class Employee
     {
-        [Key] public int EmployeeId { get; set; }
+        [Key] public string EmployeeId { get; set; }
         [Required] public string FullName { get; set; }
         [Required] public DateOnly DateOfBirth { get; set; }
-        [ForeignKey("Role")] public int RoleId { get;set; }
-        [ForeignKey("Team")] public int TeamId { get; set; }
-        public DateOnly ProbasionDate {  get; set; }
-        public DateOnly HireDate { get; set; }
-        public DateOnly TerminationDate {  get; set; }
+        [Required] [ForeignKey("Role")] public string RoleId { get;set; }
+        [Required] [ForeignKey("Team")] public string TeamId { get; set; }
+        public DateOnly? ProbasionDate {  get; set; }
+        public DateOnly? HireDate { get; set; }
+        public DateOnly? TerminationDate {  get; set; }
         
         public Role Role { get; set; }
         public Team Team { get; set; }
